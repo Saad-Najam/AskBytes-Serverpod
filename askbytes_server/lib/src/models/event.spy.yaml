@@ -1,0 +1,7 @@
+class: Event
+table: event
+fields:
+  name: String
+  description: String?
+  ownerId: UuidValue
+  createdAt: DateTime, default=now

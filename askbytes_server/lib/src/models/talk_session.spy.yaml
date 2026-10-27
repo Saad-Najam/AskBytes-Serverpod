@@ -1,0 +1,21 @@
+class: TalkSession
+table: talk_session
+fields:
+  eventId: int?, relation(parent=event, onDelete=SetNull)
+  title: String
+  speakerName: String
+  description: String?
+  durationMinutes: int?
+  speakerId: UuidValue
+  joinCode: String
+  status: String, default='active'
+  questionCount: int, defaultModel=0, !persist
+  autoEndScheduled: bool, defaultModel=false, !persist
+  createdAt: DateTime, default=now
+  endedAt: DateTime?
+indexes:
+  talk_session_join_code_idx:
+    fields: joinCode
+    unique: true
+  talk_session_speaker_idx:
+    fields: speakerId

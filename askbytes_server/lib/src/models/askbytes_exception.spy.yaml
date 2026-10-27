@@ -1,0 +1,3 @@
+exception: AskBytesException
+fields:
+  message: String

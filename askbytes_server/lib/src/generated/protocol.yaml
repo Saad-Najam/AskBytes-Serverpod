@@ -1,0 +1,33 @@
+anonymousIdp:
+  - login:
+emailIdp:
+  - login:
+  - startRegistration:
+  - verifyRegistrationCode:
+  - finishRegistration:
+  - startPasswordReset:
+  - verifyPasswordResetCode:
+  - finishPasswordReset:
+  - hasAccount:
+googleIdp:
+  - login:
+  - loginWithCode:
+  - hasAccount:
+jwtRefresh:
+  - refreshAccessToken:
+question:
+  - postQuestion:
+  - upvoteQuestion:
+  - getMyVotes:
+  - togglePin:
+recap:
+  - generateRecap:
+  - getRecap:
+session:
+  - createSession:
+  - getSession:
+  - getSessionById:
+  - getSpeakerSessions:
+  - endSession:
+  - getStats:
+  - listenToSession:

@@ -1,0 +1,10 @@
+class: Vote
+table: vote
+fields:
+  questionId: int, relation(parent=question, onDelete=Cascade)
+  voterToken: String
+  createdAt: DateTime, default=now
+indexes:
+  vote_unique_voter_idx:
+    fields: questionId, voterToken
+    unique: true

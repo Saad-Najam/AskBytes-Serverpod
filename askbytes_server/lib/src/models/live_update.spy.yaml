@@ -1,0 +1,7 @@
+class: LiveUpdate
+fields:
+  type: LiveUpdateType
+  questions: List<Question>?
+  question: Question?
+  session: TalkSession?
+  recap: SessionRecap?

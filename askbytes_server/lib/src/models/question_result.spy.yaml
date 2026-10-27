@@ -1,0 +1,5 @@
+class: QuestionResult
+fields:
+  merged: bool
+  question: Question
+  message: String

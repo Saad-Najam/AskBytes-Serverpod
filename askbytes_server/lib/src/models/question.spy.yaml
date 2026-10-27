@@ -1,0 +1,15 @@
+class: Question
+table: question
+fields:
+  sessionId: int, relation(parent=talk_session, onDelete=Cascade)
+  text: String
+  voteCount: int, default=0
+  embedding: Vector(768)?, scope=serverOnly
+  mergeCount: int, default=0
+  mergeNote: String?
+  pinned: bool, default=false
+  postedById: String
+  createdAt: DateTime, default=now
+indexes:
+  question_session_idx:
+    fields: sessionId

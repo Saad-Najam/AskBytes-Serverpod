@@ -1,0 +1,7 @@
+enum: LiveUpdateType
+values:
+  - snapshot
+  - questionAdded
+  - questionUpdated
+  - sessionEnded
+  - recapReady

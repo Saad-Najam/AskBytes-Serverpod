@@ -1,0 +1,6 @@
+class: SessionStats
+fields:
+  totalQuestions: int
+  totalVotes: int
+  mergedDuplicates: int
+  participants: int

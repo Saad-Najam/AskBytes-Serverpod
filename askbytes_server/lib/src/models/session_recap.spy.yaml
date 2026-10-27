@@ -1,0 +1,13 @@
+class: SessionRecap
+table: session_recap
+fields:
+  sessionId: int, relation(parent=talk_session, onDelete=Cascade)
+  summaryMarkdown: String
+  keyThemes: List<String>
+  topQuestions: String
+  unanswered: List<String>
+  generatedAt: DateTime, default=now
+indexes:
+  session_recap_session_idx:
+    fields: sessionId
+    unique: true
